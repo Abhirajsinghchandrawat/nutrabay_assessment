@@ -471,7 +471,7 @@ with t_perf:
         y=src_e["source"], x=src_e["eff"], orientation="h",
         text=[f"<b>{v}</b>" for v in src_e["eff"]], textposition="outside",
         marker_color=[C["green"] if v >= 60 else C["amber"] if v >= 30 else C["red"] for v in src_e["eff"]],
-        textfont=dict(size=12, color="#1E293B"),
+        textfont=dict(size=12, color="#FFFFFF"),
     ))
     styled(fig, h=260, xaxis_title="Efficiency Score (0–100)", xaxis_range=[0, 120])
     st.plotly_chart(fig, use_container_width=True)
